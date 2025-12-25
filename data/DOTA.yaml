@@ -1,0 +1,28 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/ubuntu/file/pk/datasets/DOTA  # dataset root dir  这里给出数据集的根目录
+train: /home/ubuntu/file/pk/datasets/DOTA/images/train  # train images (relative to 'path')  6471 images 训练数据集的路径
+val: /home/ubuntu/file/pk/datasets/DOTA/images/val  # val images (relative to 'path')  548 images  验证数据集的路径
+#val: /root/datasets/VisDrone/VisDrone2019-DET-val/images  # val images (relative to 'path')  548 images
+test: /home/ubuntu/file/pk/datasets/DOTA/test/images # test images (optional)  1610 images
+
+nc: 16
+
+# Classes
+names: [
+        'small-vehicle',      # 0
+        'large-vehicle',      # 1
+        'plane',              # 2
+        'storage-tank',       # 3
+        'ship',               # 4
+        'harbor',             # 5
+        'ground-track-field', # 6
+        'soccer-ball-field',  # 7
+        'tennis-court',       # 8
+        'swimming-pool',      # 9
+        'baseball-diamond',   # 10
+        'roundabout',         # 11
+        'basketball-court',   # 12
+        'bridge',             # 13
+        'helicopter',         # 14
+        'container-crane'     # 15
+]
